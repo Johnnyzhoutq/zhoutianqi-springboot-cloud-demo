@@ -18,7 +18,7 @@ public class Sender {
 
 	public void send() {
 		String context = "hello " + new Date();
-		System.out.println("This is a Sender : " + context);
+		System.out.println("Send a base object content by rabbitTemplate: " + context);
 		this.rabbitTemplate.convertAndSend("hello", context);
 	}
 

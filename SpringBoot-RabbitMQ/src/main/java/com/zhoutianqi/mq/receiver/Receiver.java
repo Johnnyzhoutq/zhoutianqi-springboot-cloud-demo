@@ -17,7 +17,7 @@ public class Receiver {
 
     @RabbitHandler
     public void process(String hello) {
-        System.out.println("This is a Receiver : " + hello);
+        System.out.println("Receive and handle a base object content: " + hello);
     }
 
 }
