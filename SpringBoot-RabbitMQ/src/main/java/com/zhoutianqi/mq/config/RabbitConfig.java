@@ -42,7 +42,7 @@ public class RabbitConfig implements RabbitListenerConfigurer{
 	Queue queueMessages() {
 		return new Queue("queue.messages", false);
 	}
-	
+	//定义数据交换器，当然呢有四种类型，根据需求来
 	@Bean
 	TopicExchange exchange() {
 		return new TopicExchange("exchange");
@@ -57,7 +57,7 @@ public class RabbitConfig implements RabbitListenerConfigurer{
 	Binding bindingExchangeMessages(Queue queueMessages, TopicExchange exchange) {
 		return BindingBuilder.bind(queueMessages).to(exchange).with("queue.messages");
 	}
-	
+	//支持对复杂数据类型的支持
 	@Bean
 	public MappingJackson2MessageConverter jackson2Converter() {
 		MappingJackson2MessageConverter converter = new MappingJackson2MessageConverter();
