@@ -1,0 +1,22 @@
+server:  
+    port: 7009
+    address: localhost
+spring:  
+  cloud:  
+    stream:  
+      bindings:  
+        usertest:       #channelName 自定义的通道名称
+          content-type: application/json
+          group: testGroup
+          destination: topic #destination，或者可以认为是发布－订阅模型里面的topic  
+          binder: rabbit1  
+      binders:  
+        rabbit1:  
+          type: rabbit  
+          environment:  
+            spring:  
+              rabbitmq:  
+                host: localhost   #rabbitMQ服务器地址  
+                port: 5672          #rabbitMQ服务器端口  
+                username: zhoutianqi  
+                password: zhoutianqi

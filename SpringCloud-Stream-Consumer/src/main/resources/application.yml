@@ -1,0 +1,23 @@
+server:  
+    port: 7008
+    address: localhost
+spring:  
+  cloud:  
+    stream:  
+      bindings:  
+          usertest: #channelName 自定义的通道名称
+            group: testGroup      #消费者分组可实现多消费者监听同一通道消息的负载均衡
+            content-type: application/json
+            destination: topic #position2。destination，或者可以认为是发布－订阅模型里面的topic，这里应该与输出app中发布的topic一致，表示订阅该主题  
+            binder: rabbit1  
+      binders:  
+        rabbit1:  
+          type: rabbit     #可以是其它，比如kafka  
+          environment:  
+            spring:  
+              rabbitmq:  
+                host: localhost   #rabbitMQ服务器地址  
+                port: 5672          #rabbitMQ服务器端口  
+                username: zhoutianqi  
+                password: zhoutianqi  
+                
