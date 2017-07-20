@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lvmama.pangolin.mybatis.hotel.HotelProductDetailMapper">
+  <resultMap id="BaseResultMap" type="com.lvmama.pangolin.entity.hotel.HotelProductDetail">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="detail_id" jdbcType="VARCHAR" property="detailId" />
+    <result column="company_code" jdbcType="VARCHAR" property="companyCode" />
+    <result column="platform_code" jdbcType="VARCHAR" property="platformCode" />
+    <result column="city_code" jdbcType="VARCHAR" property="cityCode" />
+    <result column="hotel_name" jdbcType="VARCHAR" property="hotelName" />
+    <result column="hotel_addr" jdbcType="VARCHAR" property="hotelAddr" />
+    <result column="product_id" jdbcType="VARCHAR" property="productId" />
+    <result column="come_date" jdbcType="DATE" property="comeDate" />
+    <result column="leave_date" jdbcType="DATE" property="leaveDate" />
+    <result column="lowest_price" jdbcType="VARCHAR" property="lowestPrice" />
+    <result column="score" jdbcType="VARCHAR" property="score" />
+    <result column="image_num" jdbcType="VARCHAR" property="imageNum" />
+    <result column="introduction" jdbcType="VARCHAR" property="introduction" />
+    <result column="sale_count" jdbcType="VARCHAR" property="saleCount" />
+    <result column="score_tag" jdbcType="VARCHAR" property="scoreTag" />
+    <result column="star_level" jdbcType="VARCHAR" property="starLevel" />
+    <result column="detail_url" jdbcType="VARCHAR" property="detailUrl" />
+    <result column="snapshot_addr" jdbcType="VARCHAR" property="snapshotAddr" />
+    <result column="lv_product_id" jdbcType="VARCHAR" property="lvProductId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="DATE" property="updateTime" />
+    <result column="task_id" jdbcType="VARCHAR" property="taskId" />
+    <result column="task_date" jdbcType="DATE" property="taskDate" />
+    <result column="rsrv_str1" jdbcType="VARCHAR" property="rsrvStr1" />
+    <result column="rsrv_str2" jdbcType="VARCHAR" property="rsrvStr2" />
+    <result column="rsrv_str3" jdbcType="VARCHAR" property="rsrvStr3" />
+  </resultMap>
+</mapper>

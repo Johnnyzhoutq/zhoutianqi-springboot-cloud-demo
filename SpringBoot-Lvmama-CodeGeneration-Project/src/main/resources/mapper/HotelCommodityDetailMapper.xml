@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lvmama.pangolin.mybatis.hotel.HotelCommodityDetailMapper">
+  <resultMap id="BaseResultMap" type="com.lvmama.pangolin.entity.hotel.HotelCommodityDetail">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="detail_id" jdbcType="VARCHAR" property="detailId" />
+    <result column="room_type" jdbcType="VARCHAR" property="roomType" />
+    <result column="commodity_id" jdbcType="VARCHAR" property="commodityId" />
+    <result column="area" jdbcType="VARCHAR" property="area" />
+    <result column="floor" jdbcType="VARCHAR" property="floor" />
+    <result column="commodity_name" jdbcType="VARCHAR" property="commodityName" />
+    <result column="bed_type" jdbcType="VARCHAR" property="bedType" />
+    <result column="broadband" jdbcType="VARCHAR" property="broadband" />
+    <result column="breakfast" jdbcType="VARCHAR" property="breakfast" />
+    <result column="window" jdbcType="VARCHAR" property="window" />
+    <result column="increase_bed" jdbcType="VARCHAR" property="increaseBed" />
+    <result column="people_num" jdbcType="VARCHAR" property="peopleNum" />
+    <result column="commodity_url" jdbcType="VARCHAR" property="commodityUrl" />
+    <result column="product_id" jdbcType="VARCHAR" property="productId" />
+    <result column="cancel_rule" jdbcType="VARCHAR" property="cancelRule" />
+    <result column="preferential" jdbcType="VARCHAR" property="preferential" />
+    <result column="sale_price" jdbcType="VARCHAR" property="salePrice" />
+    <result column="price_list_id" jdbcType="VARCHAR" property="priceListId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="DATE" property="updateTime" />
+    <result column="task_id" jdbcType="VARCHAR" property="taskId" />
+    <result column="task_date" jdbcType="DATE" property="taskDate" />
+    <result column="city_code" jdbcType="VARCHAR" property="cityCode" />
+    <result column="rsrv_str1" jdbcType="VARCHAR" property="rsrvStr1" />
+    <result column="rsrv_str2" jdbcType="VARCHAR" property="rsrvStr2" />
+    <result column="rsrv_str3" jdbcType="VARCHAR" property="rsrvStr3" />
+  </resultMap>
+</mapper>
